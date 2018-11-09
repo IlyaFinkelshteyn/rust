@@ -341,7 +341,7 @@ fn do_mir_borrowck<'a, 'gcx, 'tcx>(
     }
 
     if !mbcx.errors_buffer.is_empty() {
-        mbcx.errors_buffer.sort_by_key(|diag| diag.span.primary_span());
+        mbcx.errors_buffer.sort_by_cached_key(|diag| diag.span.primary_span());
 
         if tcx.migrate_borrowck() {
             // When borrowck=migrate, check if AST-borrowck would
