@@ -89,6 +89,7 @@ environment:
     DEPLOY: 1
     CI_JOB_NAME: dist-x86_64-msvc
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017 Preview
+    appveyor_build_worker_cloud: gce
   - RUST_CONFIGURE_ARGS: >
       --build=i686-pc-windows-msvc
       --target=i586-pc-windows-msvc
