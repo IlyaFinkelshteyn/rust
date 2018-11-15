@@ -10,7 +10,7 @@ environment:
   # minute startup overhead, but that's paltry compared to our overall build
   # times so we're will to eat the cost. This is intended to give us better
   # performance I believe!
-  appveyor_build_worker_cloud: gce
+  appveyor_build_worker_cloud: pro-aws
 
   matrix:
   # 32/64 bit MSVC tests
